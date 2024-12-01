@@ -8,10 +8,23 @@ public class Project_Prometheus : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "GameplayAbilities", "GameplayTags", "GameplayTasks" });
+		PublicDependencyModuleNames.AddRange(new string[] 
+			{ "Core"
+			, "CoreUObject"
+			, "Engine"
+			, "InputCore"
+			, "EnhancedInput"
+			, "GameplayAbilities"
+			, "GameplayTags"
+			, "GameplayTasks" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
+		PublicIncludePaths.AddRange(
+			new string[]
+			{ "ProjectName"
+			, "ProjectName/Public" });
+		
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		
